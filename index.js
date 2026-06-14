@@ -5,7 +5,7 @@ const app = express();
 const SHEET_ID = process.env.SHEET_ID;
 
 async function loadData() {
-const url = https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv;
+const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv`;
 
 const response = await fetch(url);
 const text = await response.text();
