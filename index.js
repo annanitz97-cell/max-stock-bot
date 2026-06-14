@@ -82,9 +82,9 @@ function getProducts(rows) {
         raw: row
       };
     })
-    .filter((product) => {
-      return product.name && (product.modelArticle || product.article);
-    });
+   .filter((product) => {
+  return product.name;
+});
 }
 
 function findProducts(products, query) {
